@@ -21,6 +21,9 @@ p = sigmoid(X*theta) >= 0.5;
 
 
 % =========================================================================
+% Compare the predictions with the actual labels
+accuracy = mean(double(p == y)) * 100;
 
+fprintf('Training Accuracy: %f%%\n', accuracy);
 
 end
